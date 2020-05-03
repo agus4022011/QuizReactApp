@@ -5,6 +5,7 @@ import './App.css';
 import Watch from './components/Watch';
 import Quiz from './components/Quiz';
 import Header from  './components/header';
+import Cards from  './components/Cards';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -18,6 +19,8 @@ function App() {
 
         <Quiz />
 
+        <Cards />
+        
 
       
     </div>

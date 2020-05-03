@@ -168,26 +168,31 @@ if (this.state.cuentaPreguntas ===QuizData.length-1){
 
 
         return (
-            <div className="card w-50 mr-auto ml-auto  ">
-               
+            <div className="card w-50 mr-auto ml-auto p-2  ">
+                <div class="card-body">
                 <h2> {preguntas}</h2>
         <span>{`Pregunta ${cuentaPreguntas} de ${QuizData.length - 1}`}</span>
                 <hr/>
+               
+                
+             
                 {opciones.map(
                     item =>
                     <p key= {item.id}
-                       className={`card  ${userAnswer === item ? "bg-secondary":null}`}
+                       className={`card-text ${userAnswer === item ? "bg-secondary":null}`}
                        onClick = {()=>this.checkAnwer(item)}
+                       id="cardita"
                     >
                         {item}
                     </p>
                 )}
 
+               <hr className="w-50 ml-auto mr-auto"/>
 
                 {cuentaPreguntas < QuizData.length - 1 &&
                 <button
                    onClick={()=>this.updateQue()}
-                   className="btn btn-success"
+                   className="btn btn-success "
                    disabled={this.state.disabled}
                 >
 
@@ -210,7 +215,7 @@ if (this.state.cuentaPreguntas ===QuizData.length-1){
              </button>
                 
                 }
-
+ </div>
 
                 <br/>
             </div>
