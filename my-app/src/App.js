@@ -6,8 +6,12 @@ import Watch from './components/Watch';
 import Quiz from './components/Quiz';
 import Header from  './components/header';
 import Cards from  './components/Cards';
+import ReactPLayer from 'react-player';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
 
 function App() {
   return (
@@ -17,9 +21,17 @@ function App() {
 
         <Watch />
 
+        <ReactPLayer 
+                    className='container mb-3'
+                    controls url='https://youtu.be/7sDY4m8KNLc'
+                     onEnded={()=>alert("termino") }
+        
+        />
+
         <Quiz />
 
         <Cards />
+        
         
 
       

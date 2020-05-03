@@ -11,7 +11,7 @@ class Cards extends Component {
 
     render() {
         return (
-            <div class=" container ml-auto mr-auto card-deck">
+            <div class=" container ml-auto mr-auto card-deck mt-3">
              <div class="card">
            
               <div class="card-body">
